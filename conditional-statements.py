@@ -12,26 +12,27 @@
 
 
 # Pizza Order
-# size = input("Enter pizza size?S or M or L: ")
-# add_pepperoni = input("Add pepperoni?N or Y: ")
-# extra_cheese = input("Add extra cheese?N or Y: ")
+size = input("Enter pizza size?S or M or L: ")
+add_pepperoni = input("Add pepperoni?N or Y: ")
+extra_cheese = input("Add extra cheese?N or Y: ")
 
-# bill = 0
+bill = 0
 
-# if size == "S":
-#   bill += 15
-# elif size == "M":
-#   bill += 20
-# else:
-#   bill += 25
+if size == "S":
+  bill += 15
+elif size == "M":
+  bill += 20
+else:
+  bill += 25
 
-# if add_pepperoni == "Y":
-#     if size == "S":
-#         bill += 2
-#     else:
-#         bill += 3
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+        print('payyye')
+    else:
+        bill += 3
 
-# if extra_cheese == "Y":
-#     bill += 1
+if extra_cheese == "Y":
+    bill += 1
 
-# print(f"Your final bill is: ${bill}.")
+print(f"Your final bill is: ${bill}.")

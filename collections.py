@@ -9,6 +9,15 @@
 # Dictionary = a dictionary is created by placing items inside {} seperated by commas
 #           dictionaries are unordered, changable and indexed, no duplicate values
 
+
+
+my_list = ["cars", "lorries", "buses", True, 1, 2, 3, 4.5,]
+
+print(my_list.append(1))
+# my_list2 = [5, 6, 7]
+
+# result = my_list + my_list2
+
 # Lists
 # single dimensional list
 # single_dim_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 1, 2, 3, 4, 5, 6, 7, True, False]
@@ -25,7 +34,14 @@
 # 1. print 5.4 in console
 # 2. print 'green' in console
 # 3. print 3 in console
-multi_dim_list = [[1, 2, 3], [[5.4, 3.1], ['green', 'blue', 'yellow']]]
+# 4. print 'Dello' in console
+# 5. print True in console
+# 6. print "cheers" in console
+# 7. What is the element at index [1][1] in console
+# multi_dim_list = [[1, 2, 3], [[5.4, 3.1], [True, False, ["Prado", "Nissan"]], "Cheers", ['green', 'blue', 'yellow']]]
+# print(dir(multi_dim_list)
+# print(multi_dim_list.index(["Prado"]))
+# print(multi_dim_list.index("Prado"))
 
 # # Tuples
 # numbers = {3, 1, 4, 1, 5, 9, 2}
