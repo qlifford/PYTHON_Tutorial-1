@@ -1,7 +1,8 @@
-age = int(input("How old are you?\n"))
-target = int(input("Enter target\n"))
-start = int(input("Enter Start year\n"))
+# age = int(input("How old are you?\n"))
+# target = int(input("Enter target\n"))
+# start = int(input("Enter Start year\n"))
 
-# remainder = 
+# # remainder = 
 
-print(f"You are {age} years old")
+# print(f"You are {age} years old")
+

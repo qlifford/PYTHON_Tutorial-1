@@ -1,7 +1,7 @@
 size = input("Enter pizza size?S or M or L: ").lower()
 pepperoni = input("Add pepperoni?N or Y: ").lower()
 extra_cheese = input("Add extra cheese?N or Y: ").lower()
-bill = 0
+# bill = 0
 if size == "s":
     bill = 15
 elif size == "m":
@@ -22,5 +22,5 @@ if extra_cheese == "y":
         bill += 1
 
 
-print(f"Yur total bill is Kshs {bill}")
+print(f"Your total bill is Kshs {bill}")
 

@@ -3,8 +3,8 @@ import webbrowser as wb
 def setupauto():
     chrome_path = "C:/Program Files/Google/Chrome/Application/chrome.exe %s"
     URLS = (
-        "stackoverflow.com",
         "gmail.com",
+        "stackoverflow.com",
         "github.com",
         "youtube.com",
     )

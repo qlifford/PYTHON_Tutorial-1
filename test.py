@@ -1,2 +1,7 @@
-print("Hello World!")
-numbers = [3, 1, 4, 1, 5, 9, 2]
+cards = ["pencils", 10]
+
+
+# print(cards[1])
+
+
+# print(type(cards))

@@ -33,5 +33,59 @@
 # print(multi_dim_list[1][1][0])
 
 # Tuples
-my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10,9)
-print(my_tuple.count(9))
+# my_tuple = ((1, 2, 3, 4), 5, 6, 7, 8, 9, 10,9)
+# print(my_tuple.count(9))
+# x = list(my_tuple[0] + my_tuple)
+# print(x)
+# def chk_prime(n):
+#     if n == 2:
+#         # return True
+#         print(True)
+#     for i in range(2, n):
+#         if n % i == 0:
+#             # return False
+#             print(False)
+#     # return True 
+#     print(True)
+# chk_prime(4)
+
+# import keyword
+
+# print(keyword.kwlist)
+# print('This is a\nNew line\nThis is a   tabbed line\tit\'s nice') 
+
+# a = "let    ter"
+# b = a.strip()
+# print(dir(b))
+# print(b.upper())
+# import requests
+
+# counter = 10
+
+# while counter:
+#     print (counter)
+#     counter -= 1
+# response = None
+
+# while response not in [True or False]:
+#     response = input("Please enter True or False\n")
+#     response = response.lower() == "true"
+# print ("Thank you for your response!")
+
+# value = "python"
+# result = int(value)
+# print(result)
+# try:
+#     result = int(value).strip()
+#     print(type(result))
+# except ValueError as e:
+    # print(e)
+
+li = [11, 12, 13, 14]
+l = iter(li)
+# print(next(l))
+# print(next(l))
+# print(next(l))
+# print(next(l))
+# print(next(l))
+print(next(li))
