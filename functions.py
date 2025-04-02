@@ -69,6 +69,17 @@
 # b = int(input("Enter a number: "))
 # is_prime(b)
 
+
+
+# The dafault parameter value
+# def my_cities(city = "Nairobi"):
+#   print("I am from " + city)
+
+# my_cities("kasarani")
+# my_cities("karen")
+# my_cities()
+# my_cities("umoja")
+
 # # Arguments(args(tuple)) 
 # def my_function(*args):
 #   print("The first child is " + kids[0])
@@ -82,13 +93,19 @@
 
 # my_function(fname = "Cliff", lname = "Omollo", age = 40)
 
-def addresses(**kwargs):
-  # for value in kwargs.values():
-  # for key in kwargs.keys():
-  # for item in kwargs.items():
-  for key, value in kwargs.items():
-    print (f"{key}: {value}")
-    # print (item)
-  # print(type(kwargs))
+# def addresses(**kwargs):
+#   # for value in kwargs.values():
+#   # for key in kwargs.keys():
+#   # for item in kwargs.items():
+#   for key, value in kwargs.items():
+#     print (f"{key}: {value}")
+#     # print (item)
+#   # print(type(kwargs))
   
-addresses(city='nairobi', location='town', phone='1234')
+# addresses(city='nairobi', location='town', phone='1234')
+
+
+def greet(fname, lname):
+  print (f"Hello {fname} {lname}")
+  
+greet( "Otieno", lname = "Cliff")
