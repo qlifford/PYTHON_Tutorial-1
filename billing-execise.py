@@ -5,18 +5,20 @@
 # extra cheese is $1
 
 
-size = input("Enter the size of pizza s/m/l: ")
+size = input("Enter the size of pizza: 's'/'m'/'l' ")
 pepperoni = input("Add pepperoni y/n: ")
 extra_cheese = input("Add extra cheese y/n: ")
 
 
 bill = 0
-if size == "s":
+if size == 's':
     bill += 35
-elif size == "m":
+elif size == 'm':
     bill += 40
-else:
+elif size == 'l':
     bill += 45
+else:
+    print("Invalid entry")
 
 if pepperoni == "y":
     if size == "s" or size == "m":

@@ -2,17 +2,23 @@
 #     print('Hello World!')
 
 
-# call the function
+# # call the function
+# greet()
+# del greet
 # greet()
 
 # print('Outside function')
 
 # Python Function Arguments
-# def greet(name):
-#     print("Hello", name)
+# def salam(**kwrgs):
+#     print(f"{kwrgs['fname']} {kwrgs['mname']} {kwrgs['lname']}")
 
 # # pass argument
-# greet("Mike")
+# salam(fname="Wamboi", mname="kamau", lname= "joy")
+
+
+
+
 
 
 # # # function with two arguments
@@ -71,11 +77,11 @@
 
 
 
-# The dafault parameter value
-# def my_cities(city = "Nairobi"):
-#   print("I am from " + city)
+# # The dafault parameter value
+# def my_cities(city = "Nairobi", **kwargs):
+#   print(f"I am from {city} {kwargs['state']}\nI speak {kwargs['lang']}" )
 
-# my_cities("kasarani")
+# my_cities(city="Kakamega", state = "kenya", lang = "kiswahili")
 # my_cities("karen")
 # my_cities()
 # my_cities("umoja")
@@ -105,7 +111,111 @@
 # addresses(city='nairobi', location='town', phone='1234')
 
 
-def greet(fname, lname):
-  print (f"Hello {fname} {lname}")
+# def greet(fname, lname):
+#   print (f"Hello {fname} {lname}")
   
-greet( "Otieno", lname = "Cliff")
+# greet( "Otieno", lname = "Cliff")
+
+
+# # Scope of variables
+# # Variable with global scope
+# name = "Python"
+# def func():
+#     print("Inside the function, the value of name is:", name)
+# print("Outside the function, the value of name is:", name)
+
+# func()
+
+# # Variable with local scope
+
+
+
+
+
+
+
+
+# var = 20 #global variable
+# def func(): 
+#     global v   
+#     v = 20 #local variable
+#     print(f"{v} inside")
+
+# func()
+
+# print(f'{v} outside')
+
+
+
+
+# # print("Outside the function, the value of var is:", var)
+
+
+# num = 10 # lifeline is global
+# def func():
+#     num = 5 # lifeline ends in here
+#     print("Inside the function, the value of num is:", num)
+# print("Before executing the function")
+# print("num=", num)
+
+# func()
+
+# print("After executing the function")
+# print("num=", num)
+
+
+
+# A lambda is one line function
+# print(lambda a, b:a + b)
+
+
+
+
+
+
+
+def my_func(x, y):
+    result = x * y
+    return result  
+
+
+print(my_func(5, 5)) 
+
+ 
+mlt = lambda x, y, z: x * y + z
+print(mlt(5, 5, 4))
+
+
+
+
+
+
+
+
+
+
+
+nums = [1, 15, 3, 6, 22, 10]
+max = nums[0]
+def largest_num(num, max ):
+    for num in nums:
+        if num > max:
+            max = num
+    print(max)
+
+
+largest_num()
+
+
+
+
+
+
+
+
+
+# max = nums[0]
+# for num in nums:
+#     if num > max:
+#         max = num
+# print(max)       
