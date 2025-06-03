@@ -1,6 +1,31 @@
+# print(salamu("Jambo Kenya", 45, 4.7, True))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from func_flex import *
 
-num_of_chrs_in_name("go home", "and cook", "or get canned", fname = "john", lname = "odiero", age = 55, phone = 123498)
+# salamu(900, grt = "Jambo Kenya", age = 45)
+    
+# get_modulo(3,5,7)
+# name_age(30, "john")
+    
+    
     
     
     

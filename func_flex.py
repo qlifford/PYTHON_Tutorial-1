@@ -8,23 +8,23 @@
 
 
 
-def salamu(*args):
-    return args[0]
+# def salamu(*args):
+#     return args[0]
 
-g = salamu("Mambo")
-print(g)
+# g = salamu("Mambo")
+# print(g)
 
-def salamu(**kwargs):
-    return kwargs['var']
+# def salamu(**kwargs):
+#     return kwargs['var']
 
-g = salamu(var = "Hello")
-print(g)
+# g = salamu(var = "Hello")
+# print(g)
 
-def salamu(*args, **kwargs):
-    return args[0] + " " + kwargs['var']
+# def salamu(*args, **kwargs):
+#     return args[0] + " " + kwargs['var']
 
-g = salamu("Sema", var = "Hello")
-print(g)
+# g = salamu("Sema", var = "Hello")
+# print(g)
 
 
 
@@ -110,3 +110,45 @@ print(g)
 
 
 
+# def salamu(**kwargs):
+#     rst = print(f"{kwargs['grt']} you are {kwargs['age']} years old")
+#     return rst
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def salamu(*args, **kwargs):
+#     rst = print(f"{kwargs['grt']} you are {kwargs['age']} years old, you scored {args[0]}")
+#     return rst
+   
+
+# def get_modulo(*args):
+#     reslt = args[0] % args[0] % args[0]
+#     print(f"The modulus is {reslt}")
+
+
+
+
+
+
+
+
+
+
+
+
+def name_age(age=30, **kwargs):
+    print(f"You name is {kwargs['name']}\nYour age is {age}\nYour height is {kwargs['height']}''")
+     
+name_age(name="john", height = 6.5)

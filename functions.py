@@ -174,16 +174,16 @@
 
 
 
-def my_func(x, y):
-    result = x * y
-    return result  
+# def my_func(x, y):
+#     result = x * y
+#     return result  
 
 
-print(my_func(5, 5)) 
+# print(my_func(5, 5)) 
 
  
-mlt = lambda x, y, z: x * y + z
-print(mlt(5, 5, 4))
+# mlt = lambda x, y, z: x * y + z
+# print(mlt(5, 5, 4))
 
 
 
@@ -195,16 +195,16 @@ print(mlt(5, 5, 4))
 
 
 
-nums = [1, 15, 3, 6, 22, 10]
-max = nums[0]
-def largest_num(num, max ):
-    for num in nums:
-        if num > max:
-            max = num
-    print(max)
+# nums = [1, 15, 3, 6, 22, 10]
+# max = nums[0]
+# def largest_num(num, max ):
+#     for num in nums:
+#         if num > max:
+#             max = num
+#     print(max)
 
 
-largest_num()
+# largest_num()
 
 
 
@@ -219,3 +219,37 @@ largest_num()
 #     if num > max:
 #         max = num
 # print(max)       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Nested functions
+# def outer_function():
+#     print("Outer function")
+    
+#     def inner_function():
+#         print("Inner function")
+#     inner_function()
+    
+# outer_function()
+
+def f1(name):
+    salam = f"Hi, {name}"
+    def f2():
+        print(salam)
+    f2()
+        
+
+        
