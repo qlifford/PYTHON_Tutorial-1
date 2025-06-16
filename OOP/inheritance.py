@@ -1,13 +1,13 @@
 # single inheritance
 class Human:
-    identity = "God's creation"  # Class attribute
+    alive = True  # Class attribute
     # Class attributes are shared by all instances of the class.
     def __init__(self, name, age):
         self.name = name  # Instance attribute
         self.age = age  # Instance attribute
         
     def walk(self):
-        print(f"{self.identity} can walk!")
+        print(f"{self.alive} can walk!")
 
     def speak(self):
         print( "I can speak!")
@@ -17,7 +17,7 @@ class Male(Human):
         super().__init__(name, age) 
         self.dance = dance
     def disp(self):
-        print(f"{self.name} is a {self.age} years old {self.identity} and loves to dance to {self.dance} music.")
+        print(f"{self.name} is a {self.age} years old {self.alive} and loves to dance to {self.dance} music.")
         # Inherits from Human
     def walk(self):
         super().walk()  # Call the parent class method
