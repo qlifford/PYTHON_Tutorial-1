@@ -12,54 +12,79 @@
 
 class Song:
     count = 0
+    all_songs = None
     def __init__(self, title, artist, duration):
         self.title = title
         self.artist = artist
         self.duration = duration
-        self.all_songs = Playlist.added_songs
-            
+        if Song.all_songs is None:
+            self.all_songs = []
+        else:
+            self.all_songs = Song.all_songs
+            Song.count += 1
+        
     def __str__(self):
-        self.all_songs      
+        return f"{self.title}"
+    # \nArtist: {self.artist}\nDuration: {self.duration}\n"
+        
         
 class Playlist(Song):
-    def __init__(self, playlist_name='Default'): 
+    song_count = 0
+    def __init__(self, playlist_name='Default', added_songs=None): 
         self.playlist_name = playlist_name
-        self.added_songs = []
-
+        if added_songs is None:            
+            self.added_songs = []
+        else:
+            self.added_songs = added_songs
         
-    def add_song(self, title, artist, duration):
-        song = (title, artist, duration)
-        self.added_songs.append(song)
-        Song.count += 1
+    def add_song(self, song):
+        if song not in self.added_songs:
+            self.added_songs.append(song)
+            Playlist.song_count += 1
         
-    def remove_song(self, title):
+    def remove_song(self, song):
         for song in self.added_songs: 
-            if song == self.added_songs[0]:
-                self.added_songs.remove(song)
-                Song.count -= 1
+            self.added_songs.remove(song)
+            Playlist.song_count -= 1
             break        
         
-    def show_list(self):
-        return f"{self.playlist_name}:\n{self.added_songs}"
-            
-playlist1 = Playlist("Ugandan")
-playlist2 = Playlist("Kenyan")
+    def __str__(self):
+        playlist_songs = ""
+        for item in self.added_songs:
+            playlist_songs += item.__str__() + "\n"  
+            # playlist_songs += str(item)        
+        return f"{self.playlist_name} music\n{playlist_songs}"
+    
+song1 = Song("Freu", "Nehy", 1)
+song2 = Song("Heyy", "Kelly", 2)
+song3 = Song("Luiou", "Jdut", 3)            
+song4 = Song("Luiou", "Jdut", 3)            
+# song4 = Song("Luiou", "JUYt", 4)            
+# song4 = Song("Luiou", "JUYt", 4)            
+# print(song1.get_song())
+# print(song1)
+# print(song2)
+playlist1 = Playlist("Kenyan")
+playlist1.add_song(song1)
+playlist1.add_song(song2)
+# playlist1.remove_song("Freu")
+playlist1.add_song(song3)
+playlist1.add_song(song4)
 
-playlist1.add_song("Bet", "Medi", 2)
-playlist1.add_song("Bund", "Obor", 2)
-playlist1.add_song("yot", "Lucy", 2)
+playlist2 = Playlist("Ugandan")
+playlist2.add_song(song1)
+playlist2.add_song(song2)
+# playlist2.remove_song("Freu")
+playlist2.add_song(song3)
+playlist2.add_song(song4)
 
-playlist2.add_song("hoy", "Kelly", 2)
-playlist2.add_song("Loy", "Hunnyd", 2)
-playlist2.add_song("KIl", "Yoto", 2)
 
-# print(Playlist.count)
-# playlist1.remove_song("Bet")
-# playlist1.remove_song("Bund")
-# playlist2.remove_song("KIl")
-# print(Playlist.count)
-# print(playlist1.count)
-# print (playlist1.playlist_name)
-print (playlist1.show_list())
-print (playlist2.added_songs)
-print()
+
+# print(Song.count)
+# print(playlist2.song_count)
+# print(playlist1.title)
+print (playlist1)
+print (playlist2)
+# print (playlist1.show_list())
+# print (playlist2.added_songs)
+# print()
