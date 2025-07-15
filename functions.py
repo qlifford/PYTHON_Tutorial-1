@@ -246,10 +246,12 @@
 # outer_function()
 
 def f1(name):
-    salam = f"Hi, {name}"
+    salam = "hi, {}".format(name).capitalize()
     def f2():
-        print(salam)
+        print (salam)
     f2()
+    
+
         
 
         

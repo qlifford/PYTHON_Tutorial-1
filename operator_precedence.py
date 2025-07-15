@@ -4,3 +4,12 @@
 # 8+3-2
 # 11-2
 # 9
+from password_validator import validate_password
+
+p = input("Enter password: ")  
+v = validate_password(p)
+help(v)
+ 
+
+print(validate_password(p))
+
