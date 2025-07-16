@@ -12,7 +12,7 @@ class Car:
         self.for_sale = for_sale
     # method
     def drive(self):
-        print("Can drive")
+        print("Can drive now")
     
 car_1 = Car("Mustang", 2014, "red", False) #instance of car class(object 1)
 print(car_1.model)
