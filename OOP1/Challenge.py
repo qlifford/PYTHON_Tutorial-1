@@ -44,7 +44,16 @@ def get_bet():
 
 
 def main():
-    balance = deposit()
-    lines = get_lines()
-    print(balance, lines)
-main()
+    ...
+    # balance = deposit()
+    # lines = get_lines()
+    # print(balance, lines)
+# main()
+
+def devide(a, b):
+    try:
+        a, b = b, a
+        return a/b
+    except:
+        print("Error")
+print(devide(10, 0))
